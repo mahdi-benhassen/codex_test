@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiet KPI — Votre synthèse hebdomadaire sans bruit</title>
+    <link rel="preconnect" href="https://api.fontshare.com" />
+    <link
+      rel="stylesheet"
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background-glow"></div>
+    <header class="top-bar reveal">
+      <a href="#" class="brand">Quiet KPI</a>
+      <nav>
+        <a href="#bulletins">Aperçus</a>
+        <a href="#pricing">Tarifs</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <button class="btn btn-secondary">Demander une démo</button>
+    </header>
+
+    <main>
+      <section class="hero reveal glass-card">
+        <p class="pill">Nouveau · Connecteurs automatiques</p>
+        <h1>La revue KPI hebdomadaire qui respecte votre concentration.</h1>
+        <p>
+          Quiet KPI rassemble vos métriques clés et les transforme en un e-mail clair,
+          lisible en 2 minutes, pensé pour les fondateurs.
+        </p>
+        <form class="email-capture" action="#" method="post">
+          <label for="email" class="sr-only">Adresse e-mail</label>
+          <input id="email" name="email" type="email" placeholder="vous@startup.com" required />
+          <button class="btn btn-primary" type="submit">Recevoir un exemple</button>
+        </form>
+      </section>
+
+      <section id="bulletins" class="reveal">
+        <div class="section-heading">
+          <h2>Exemples de bulletins</h2>
+          <p>Choisissez la lecture adaptée à votre stade de croissance.</p>
+        </div>
+        <div class="newsletter-grid">
+          <article class="glass-card sample-card">
+            <h3>Pré-amorçage</h3>
+            <ul>
+              <li>MRR hebdomadaire, run-rate et conversion essai → payant</li>
+              <li>Signal d'activation produit sur 7 jours</li>
+              <li>Résumé texte prêt à partager avec investisseurs</li>
+            </ul>
+          </article>
+          <article class="glass-card sample-card">
+            <h3>Série A</h3>
+            <ul>
+              <li>Pipeline commercial, vélocité SDR et taux de closing</li>
+              <li>Évolution de la marge et rétention revenue</li>
+              <li>Alertes douces sur anomalies de cohorte</li>
+            </ul>
+          </article>
+          <article class="glass-card sample-card">
+            <h3>PLG SaaS</h3>
+            <ul>
+              <li>Usage produit, adoption des features et DAU/WAU</li>
+              <li>Équilibre acquisition organique / paid</li>
+              <li>Recommandations actionnables pour la semaine</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="reveal integrations glass-card">
+        <h2>Se connecte à votre stack en quelques clics</h2>
+        <div class="integration-row" aria-label="Intégrations prises en charge">
+          <span>Stripe</span><span>HubSpot</span><span>Notion</span><span>Mixpanel</span><span>Segment</span><span>Google Sheets</span>
+        </div>
+      </section>
+
+      <section class="reveal">
+        <div class="section-heading">
+          <h2>Ce qu'en disent les fondateurs</h2>
+        </div>
+        <div class="testimonial-wrap glass-card">
+          <button class="carousel-btn" id="prevTestimonial" aria-label="Témoignage précédent">←</button>
+          <article id="testimonialCard" class="testimonial"></article>
+          <button class="carousel-btn" id="nextTestimonial" aria-label="Témoignage suivant">→</button>
+        </div>
+        <div id="testimonialDots" class="dots" aria-hidden="true"></div>
+      </section>
+
+      <section id="pricing" class="reveal">
+        <div class="section-heading">
+          <h2>Tarification transparente</h2>
+        </div>
+        <div class="pricing-toggle" role="group" aria-label="Bascule de périodicité">
+          <button data-plan="monthly" class="btn-toggle is-active">Mensuel</button>
+          <button data-plan="yearly" class="btn-toggle">Annuel <span>-20%</span></button>
+        </div>
+        <div class="pricing-grid">
+          <article class="glass-card price-card">
+            <h3>Starter</h3>
+            <p class="price" data-monthly="49€" data-yearly="39€">49€</p>
+            <p>/mois · 3 sources de données</p>
+          </article>
+          <article class="glass-card price-card featured">
+            <h3>Growth</h3>
+            <p class="price" data-monthly="129€" data-yearly="103€">129€</p>
+            <p>/mois · 10 sources + alertes intelligentes</p>
+          </article>
+          <article class="glass-card price-card">
+            <h3>Scale</h3>
+            <p class="price" data-monthly="299€" data-yearly="239€">299€</p>
+            <p>/mois · illimité + support prioritaire</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="faq" class="reveal faq">
+        <div class="section-heading">
+          <h2>FAQ</h2>
+        </div>
+        <details class="glass-card">
+          <summary>Combien de temps prend la mise en place ?</summary>
+          <p>La plupart des équipes connectent leurs outils en moins de 15 minutes.</p>
+        </details>
+        <details class="glass-card">
+          <summary>À quelle fréquence les e-mails sont-ils envoyés ?</summary>
+          <p>Par défaut chaque lundi 8h, mais vous pouvez choisir le jour et l'heure.</p>
+        </details>
+        <details class="glass-card">
+          <summary>Puis-je partager le bulletin avec mes investisseurs ?</summary>
+          <p>Oui, chaque bulletin inclut une version "board-ready" avec commentaires automatiques.</p>
+        </details>
+      </section>
+    </main>
+
+    <footer class="reveal footer">
+      <p>© 2026 Quiet KPI · Moins de bruit, plus de clarté.</p>
+      <div>
+        <a href="#">Confidentialité</a>
+        <a href="#">Conditions</a>
+        <a href="#">Contact</a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
